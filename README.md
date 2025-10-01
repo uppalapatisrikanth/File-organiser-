@@ -72,8 +72,9 @@ def start_monitoring():
         already_processed.update(new_files) 
         time.sleep(60)  
 
-if name == "main":
+if __name__ == "__main__":
   
     organize_existing_files()
    
     start_monitoring()
+
